@@ -35,7 +35,10 @@ body {
 }
 .everything {
     background-color: white;
-    margin: 0px 5% 10% 5% ;
+    margin: 0px 5% 0% 5% ;
     border-style: solid;
     border-color: black;
+}
+.footer_left {
+    font-family: 'Times New Roman', Times, serif;
 }

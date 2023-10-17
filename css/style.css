@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.header1 {
+.header1, .footer1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -37,6 +37,13 @@
     color: inherit;
 }
 
+
+.links:hover {
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .link {
     list-style: none;
     text-decoration: none;
@@ -45,4 +52,7 @@
 
 .main1 {
     display: flex;
+}
+.footer_left {
+    font-family: 'Times New Roman', Times, serif;
 }
