@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="../css/rps.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
+    
     <header class="header1">
         <div class="header-left">
             <i class="logo fa-solid fa-house"></i>
@@ -24,11 +25,29 @@
     
         </ul>
     </header>
-    <main class="main1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium quos iusto corrupti quaerat necessitatibus sunt cupiditate repudiandae natus sed, nulla consectetur debitis praesentium obcaecati minima voluptatem sint deserunt provident maiores corporis velit. Animi soluta provident voluptates, doloremque temporibus deserunt aspernatur commodi veniam? Voluptatibus quos magni quas ab quisquam aut.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere delectus, hic molestiae sed pariatur sint doloremque aspernatur quo, voluptatibus numquam reiciendis, suscipit unde. Distinctio debitis vel, delectus illum unde nulla ducimus id quaerat minima est amet impedit. Cupiditate facilis placeat eaque velit libero ad aspernatur incidunt voluptate sed cum.</p>
-    </main>
 
+    <main>
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="choice-container">
+            <div class="user-frame">
+                <h2>User Choice</h2>
+                <img src="../images/rps_imgs/rps4.png" class='user-img' alt="rps">
+            </div>
+            <div class="computer-frame">
+                <h2>Computer Choice</h2>
+                <img src="../images/rps_imgs/rps4.png" class='comp-img' alt="rps">
+            </div>
+        </div>
+        
+        <h2>Result: <span class="result">Start Game</span></h2>
+
+        <div class="user-choices">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </main>
+    
     <footer class="footer1">
 
         <!-- contact info -->
@@ -50,5 +69,9 @@
 
         </div>
     </footer>
+    
+
+    
+    <script src="../js/rps.js"></script>
 </body>
 </html>
