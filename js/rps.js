@@ -12,23 +12,46 @@
 const rockButton = document.getElementById('rock')
 const paperButton = document.getElementById('paper')
 const scissorsButton = document.getElementById('scissors')
-const results = document.querySelector('.result')
+const result = document.querySelector('.result')
 const userImg = document.querySelector('.user-img')
 const compImg = document.querySelector('.comp-img')
 
-function rockBtnClick() {
-    result.innerText = 'rock clicked'
+const choices = ['rock', 'paper', 'scissors']
+let comp
+
+// function rockBtnClick() {
+//     result.innerText = 'rock clicked'
+// }
+
+// function paperBtnClick() {
+//     result.innerText = 'paper clicked'
+// }
+
+// function scissorsBtnClick() {
+//     result.innerText = 'scissors clicked'
+// }
+
+
+rockButton.addEventListener('click', () => {
+    userImg.src = '../images/rps_imgs/' + rockButton.id + '.png'
+    // result.style.backgroundcolor = 'red'
+    compChoice()
+})
+paperButton.addEventListener('click', () => {
+    userImg.src = '../images/rps_imgs/' + paperButton.id + '.png'
+    compChoice()
+})
+scissorsButton.addEventListener('click', () => {
+    userImg.src = '../images/rps_imgs/' + scissorsButton.id + '.png'
+    compChoice()
+})
+
+function compChoice() {
+    const randNum = Math.floor(Math.random()*3)
+    comp = choices[randNum]
+    compImg.src = '../images/rps_imgs/' + comp + '.png'
 }
 
-function paperBtnClick() {
-    result.innerText = 'clicked'
+function winLose(userChoice) {
+    console.log(comp, userChoice)
 }
-
-function scissorsBtnClick() {
-    result.innerText = 'clicked'
-}
-
-
-rockButton.addEventListener('click', rockBtnClick)
-paperButton.addEventListener('click', paperBtnClick)
-scissorsButton.addEventListener('click', scissorsBtnClick)
