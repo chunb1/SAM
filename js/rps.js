@@ -36,14 +36,17 @@ rockButton.addEventListener('click', () => {
     userImg.src = '../images/rps_imgs/' + rockButton.id + '.png'
     // result.style.backgroundcolor = 'red'
     compChoice()
+    winLose(rockButton.id)
 })
 paperButton.addEventListener('click', () => {
     userImg.src = '../images/rps_imgs/' + paperButton.id + '.png'
     compChoice()
+    winLose(paperButton.id)
 })
 scissorsButton.addEventListener('click', () => {
     userImg.src = '../images/rps_imgs/' + scissorsButton.id + '.png'
     compChoice()
+    winLose(scissorsButton.id)
 })
 
 function compChoice() {
@@ -53,5 +56,19 @@ function compChoice() {
 }
 
 function winLose(userChoice) {
-    console.log(comp, userChoice)
+    if (userChoice == 'rock' && comp == 'paper') {
+        result.innerText = 'Computer Wins'
+    } else if (userChoice == 'scissors' && comp == 'rock') {
+        result.innerText = 'Computer Wins'
+    } else if (userChoice == 'paper' && comp == 'scissors') {
+        result.innerText = 'Computer Wins'
+    } else if (userChoice == 'scissors' && comp == 'paper') {
+        result.innerText = 'User Wins'
+    } else if (userChoice == 'paper' && comp == 'rock') {
+        result.innerText = 'User Wins'
+    } else if (userChoice == 'rock' && comp == 'scissors') {
+        result.innerText = 'User Wins'
+    } else {
+        result.innerText = 'Tie'
+    }
 }
