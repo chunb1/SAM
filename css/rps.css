@@ -63,3 +63,10 @@ button {
 .reset {
     background-color: rgb(50, 50, 224);
 }
+
+@media (max-width: 1000px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}

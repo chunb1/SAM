@@ -58,6 +58,7 @@ function compChoice() {
 function winLose(userChoice) {
     if (userChoice == 'rock' && comp == 'paper') {
         result.innerText = 'Computer Wins'
+        comp
     } else if (userChoice == 'scissors' && comp == 'rock') {
         result.innerText = 'Computer Wins'
     } else if (userChoice == 'paper' && comp == 'scissors') {
