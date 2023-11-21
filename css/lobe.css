@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.name {
+    border: 2px solid black;
+    display: flex;
+}
+
+.pages {
+    border: 2px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
