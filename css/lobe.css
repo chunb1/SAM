@@ -83,6 +83,7 @@ img {
     width: 90%;
     border-radius: 20px;
     margin: 5%;
+    max-width: 1000px;
 }
 
 .main-section h1 {
@@ -123,7 +124,42 @@ hr {
     width: 85%;
 }
 
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    color: #333;
+}
+
+footer i {
+    color: #04ddb2;
+}
 
 
+.col-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-col {
+    margin: 0.5em 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col a {
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+}
+
+.footer-col h5 {
+    font-size: 18px;
+}
 
 
