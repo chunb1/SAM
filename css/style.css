@@ -50,9 +50,39 @@
     color: inherit;
 }
 
-.main1 {
-    display: flex;
+main {
+    height: 72vh;
+    margin: 3em auto;
 }
+
+form {
+    width: 90%;
+    margin: 3em auto;
+}
+
+.full-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.full-name p {
+    margin-right: 7em;
+}
+
+.full-name input {
+    margin-right: 1em;
+}
+
+.required {
+    color: red;
+}
+
+label {
+    display: block;
+}
+
+
+
 .footer_left {
     font-family: 'Times New Roman', Times, serif;
 }
