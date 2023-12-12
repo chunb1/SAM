@@ -63,14 +63,18 @@ form {
 .full-name {
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
+    width: 800px;
 }
 
 .full-name p {
-    margin-right: 7em;
+    margin-right: 4em;
+    width: 15%;
 }
 
 .full-name input {
     margin-right: 1em;
+    /* width: 95%; */
 }
 
 .required {
@@ -80,6 +84,44 @@ form {
 label {
     display: block;
 }
+
+.location {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+
+.location p {
+    margin-right: 4em;
+    width: 15%;
+}
+
+.location-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-inner input {
+    width: 100%;
+}
+
+/* .place {
+    display: flex;
+    flex-direction: row;
+} */
+
+.general-area {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* .city {
+    display: flex;
+    flex-direction: column;
+} */
+
 
 
 

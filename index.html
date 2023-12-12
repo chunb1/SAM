@@ -34,7 +34,7 @@
         <div class="full-name">
             <p>Full Name <span class="required">*</span></p>
             <div class="name">
-                <input type="text">
+                <input type="text" required>
                 <label for="first-name">First Name</label>
             </div>
             <div class="name">
@@ -42,19 +42,59 @@
                 <label for="middle-name">Middle Name</label>
             </div>
             <div class="name">
-                <input type="text">
+                <input type="text" required>
                 <label for="last-name">Last Name</label>
             </div>
         </div>
 
-        <div>
+        <div class="location">
             <p>Current Address</p>
-            
-            <div class="address"></div>
-            <div class="address"></div>
-            <div class="address"></div>
-            <div class="address"></div>
-        </div>
+            <div class="location-inner">
+                <div class="address">
+                    <input type="text">
+                    <label for="street-address">Street Address</label>
+                </div>
+                <div class="address">
+                    <input type="text">
+                    <label for="street-address-two">Street Address Line 2</label>
+                </div>
+                <div class="general-area">
+                    <div class="address2">
+                        <input type="text">
+                        <label for="state">State / Province</label>
+                    </div>
+
+                    <div class="address2">
+                        <input type="text">
+                        <label for="city">City</label>   
+                    </div>
+                </div>
+                <div class="general-area">
+                <div class="address2">
+                    <input type="text">
+                    <label for="postal">Postal / Zip Code</label>        
+                </div>
+                <div class="address2">
+                    <select name="country" id="">
+                        <option value="please-select">Please Select</option>
+                        <option value="USA">U.S.A.</option>
+                        <option value="Spain">Spain</option>
+                        <option value="France">France</option>
+                        <option value="UK">U.K.</option>
+                        <option value="Portugal">Portugal</option>
+                    </select>
+                    <label for="countries">Country</label>        
+                </div>
+                
+
+                    
+                </div>
+            </div>
+    <div class="email-address">
+            <p>Email Address <span class="required">*</span></p>
+
+            <input type="text" required placeholder="ex: myname@example.com">
+    </div>
 
        </form>
     </main>
