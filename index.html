@@ -28,7 +28,7 @@
     <main>
         <div class="title">
         <h1>Job Application</h1>
-        <p>Pleas Complete the form below to apply for a position with us.</p>
+        <p>Please complete the form below to apply for a position with us.</p>
         </div>
        <form>
         <div class="full-name">
@@ -69,33 +69,78 @@
                         <label for="city">City</label>   
                     </div>
                 </div>
-                <div class="general-area">
-                <div class="address2">
-                    <input type="text">
-                    <label for="postal">Postal / Zip Code</label>        
-                </div>
-                <div class="address2">
-                    <select name="country" id="">
-                        <option value="please-select">Please Select</option>
-                        <option value="USA">U.S.A.</option>
-                        <option value="Spain">Spain</option>
-                        <option value="France">France</option>
-                        <option value="UK">U.K.</option>
-                        <option value="Portugal">Portugal</option>
-                    </select>
-                    <label for="countries">Country</label>        
-                </div>
-                
-
-                    
+                    <div class="general-area">
+                    <div class="address2">
+                     <input type="text">
+                     <label for="postal">Postal / Zip Code</label>        
+                    </div>
+                    <div class="address2">
+                        <select name="country" id="">
+                            <option value="please-select">Please Select</option>
+                            <option value="USA">U.S.A.</option>
+                            <option value="Spain">Spain</option>
+                            <option value="France">France</option>
+                            <option value="UK">U.K.</option>
+                            <option value="Portugal">Portugal</option>
+                        </select>
+                        <label for="countries">Country</label>        
+                    </div>  
                 </div>
             </div>
-    <div class="email-address">
+        </div>
+        <div class="email-address">
             <p>Email Address <span class="required">*</span></p>
 
             <input type="text" required placeholder="ex: myname@example.com">
-    </div>
+        </div>
+        <div class="phone-number">
+            <p>Phone Number</p>
+            <div>
+             <input type="text">
+            <label for="area-code">Area Code</label>   
+            </div>
+            <!-- <p class="dash">-</p> -->
+            <div>
+                <input type="text">
+                <label for="Phone-num">Phone Number</label>    
+            </div>
+            
+        </div>
+        <div class="positions">
+            <p>Applying for Position <span class="required">*</span></p>
+            <select name="position" id="">
+                <option value="please-select">Please Select</option>
+                <option value="UIUX-Developer">UI/UX UI/UX Developer</option>
+                <option value="Front-dev">Front-End Developer</option>
+                <option value="Back-dev">Back-End Developer</option>
 
+            </select>
+        </div>
+
+        <div class="date">
+            <p>Start date</p>
+            <input type="date">
+        </div>
+
+        <div class="upload-resume">
+            <p>Upload Resume <span class="required">*</span></p>
+            <input type="file">
+        </div>
+
+        <div class="take-photo">
+            <p>Take Photo</p>
+            <button class="photo">Take Photo</button>
+        </div>
+        <div class="terms">
+            <input type="checkbox">
+            <p>I agree to <span class="conditions">terms & conditions</span>.<span class="required">*</span></p>
+        </div>
+
+        <div class="Submit">
+            <input type="button" value="Submit">   
+        </div>
+             
+        <!-- <button class="submit">submit</button> -->
        </form>
     </main>
 
