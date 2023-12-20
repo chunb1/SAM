@@ -57,27 +57,31 @@ main {
 
 .card {
     position: absolute;
-    top: 2vw;
-    right: 2vw;
-    height: 50px;
-    width: 50px;
+    bottom: 70vw;
+    /* left: 3.5vw; */
+    height: 200px;
+    width: 325px;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
-    border-radius: 50%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .top {
-    position: relative;
-    height: 200px;
+    /* position: relative; */
+    height: 230px;
     width: 400px;
-/}
+
+}
 
 .bottom {
-    height: 200px;
-    width: 400px;
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: 375px;
+    justify-content: center;
     background-color: burlywood;
 }
 
