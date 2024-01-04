@@ -115,6 +115,7 @@ nav a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-between;
+    position: relative;
     /* border: 2px solid black; */
 }
 
@@ -122,6 +123,33 @@ nav a {
     display: inline-block;
    aspect-ratio: 1/1;
 }
+
+.pre-order-btn,
+.shop-btn {
+    text-transform: uppercase;
+    padding: .4rem .7rem;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.pre-order-btn {
+    background-color: #ff8b68;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.shop-btn {
+    background-color: #1a2456;
+    color: white;
+    border-radius: 20px;
+    display: none;
+}
+
+/* .item-price {
+    display: none;
+} */
 
 .item {
     display: flex;
@@ -183,3 +211,4 @@ button {
     width: 50%;
     margin: 5px2;
 }
+
