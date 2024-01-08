@@ -68,15 +68,16 @@ main {
 
 .card {
     position: absolute;
-    bottom: 20vh;
+    bottom: 5vh;
     /* left: 3.5vw; */
-    height: 60vh;
+    height: 80vh;
     width: 90%;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    color: #221524;
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -85,7 +86,26 @@ main {
     height: 30px;
 }
 
+.question {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
 
+.answer {
+    font-weight: bold;
+    color: #7a697d;
+    display: none;
+}
+
+.question button {
+    border: transparent;
+    background: transparent;
+}
+
+.minus {
+    display: none;
+}
 
 .top {
     position: relative;
@@ -102,8 +122,10 @@ main {
     display: flex;
     height: 70vh;
     justify-content: center;
-    background-color: burlywood;
+    background-color: #f7daeb;
 }
+
+
 
 form {
     width: 95%;
