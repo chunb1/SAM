@@ -108,16 +108,76 @@
 .four-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Poppins;
+    color: #4c4e61;
+}
+
+.four-card p {
+    color: #a3a5ae;
+}
+
+.four-card-title {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+/* .heading {
+    color: #4c4e61;
+    font-size: 30px;
+} */
+
+.powered {
+    font-weight: bold;
 }
 
 .features {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.feature-right,
+.feature-left {
+    display: flex;
+    align-items: center;
 }
 
 
 .feature {
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 5px 10px 2px 1px rgba(0, 0, 255, .2);
+    margin: 8px;
+    margin-bottom: 20px;
+    height: 175px;
+    width: 250px;
+}
+
+.feature-text p {
+    /* font-weight: lighter; */
+}
+
+.topic-img {
+    margin: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.feature img {
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -126,6 +186,27 @@
 
 
 
+
+.top-line {
+    height: 3px;
+    border-radius: 10px;
+}
+
+.supervisor .top-line {
+    background-color: #45d3d3;
+}
+
+.karma .top-line {
+    background-color: #fcaf4a;
+}
+
+.team-builder .top-line {
+   background-color: #ea5353; 
+}
+
+.calculator .top-line {
+    background-color: #549ef2;
+}
 
 
 
