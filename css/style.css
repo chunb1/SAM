@@ -235,7 +235,7 @@
 }
 
 main {
-    height: 140vh;
+    height: 100%;
     margin-bottom: 3em auto;
 }
 
@@ -304,127 +304,59 @@ main {
 
 
 
-
-
-
-form {
-    width: 95%;
-    margin: 3em auto;
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --neutral-blue: hsl(249, 10%, 26%);
+    --neutral-grayblue: hsl(246, 25%, 77%);
 }
 
-form input {
-    margin-right: 1em;
-}
 
-form p {
-    /* margin-right: 4em; */
-    width: 20%;
-}
 
-.full-name {
+
+.sign-up {
+    height: 80vh;
+    background-color: var(--primary-red);
+    background-image: url(/images/bg-intro-desktop.png);
     display: flex;
     flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.required {
-    color: red;
-}
-
-label {
-    display: block;
-}
-
-.location {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.location-inner {
-    display: flex;
-    flex-direction: column;
-}
-
-.location-inner input {
-    margin-right: 1em;
-}
-
-.address {
-    margin-bottom: 1.5vh;
-}
-
-.general-area {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1.5vh;
-}
-
-
-.email-address {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.phone-number {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.positions {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.date {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.upload-resume {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.take-photo {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.photo {
-    width: 20em;
-    height: 2em;
-}
-
-.terms {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 3vh;
-}
-
-.terms p {
-    width: 25%;
-}
-
-.conditions {
-    color: aqua;
-}
-
-.Submit {
-    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.Submit input {
-    height: 2.5em;
-    width: 8em;
+.title {
+    width: 400px;
 }
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    width: 425px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    padding-left: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 1px var(--neutral-grayblue);
+}
+
+.Submit input{
+    background-color: var(--primary-green);
+}
+
+
+
+
 
 .footer_left {
     font-family: 'Times New Roman', Times, serif;
