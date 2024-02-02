@@ -12,6 +12,7 @@
     color: white;
     background-color: darkslategray;
     height: 100px;
+    width: 100%;
     align-items: center;
     padding: 20px 20px;
 }
@@ -112,6 +113,7 @@
     text-align: center;
     font-family: Poppins;
     color: #4c4e61;
+    width: 100%;
 }
 
 .four-card p {
@@ -163,9 +165,8 @@
     width: 250px;
 }
 
-.feature-text p {
+/* .feature-text p {
     /* font-weight: lighter; */
-}
 
 .topic-img {
     margin: 10px;
@@ -300,7 +301,9 @@ main {
 
 
 
-
+.sign-up {
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -316,17 +319,65 @@ main {
 
 
 .sign-up {
-    height: 80vh;
+    height: 100%;
+    width: 100%;
     background-color: var(--primary-red);
     background-image: url(/images/bg-intro-desktop.png);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 375px) {
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+        width: 100px;
+    }
+
+    .main-title {
+        font-size: 10px;
+    }
+
 }
 
 .title {
     width: 400px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-title {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.payment {
+    background-color: var(--accent-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
+    color: white;
+}
+
+.sevendays {
+    font-weight: bolder;
 }
 
 form {
@@ -338,7 +389,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
 }
 
 input {
@@ -350,11 +401,23 @@ input {
     border: solid 1px var(--neutral-grayblue);
 }
 
+/* .Submit {
+    box-shadow: 0 8px 8px rgba(154, 59%, 51%, .2);
+} */
+
 .Submit input{
     background-color: var(--primary-green);
+    /* box-shadow: 0 8px 8px rgba(var(--primary-green) 1); */
 }
 
+.terms {
+    font-size: 10px;
+    color: var(--neutral-grayblue);
+}
 
+.conditions {
+    color: var(--primary-red);
+}
 
 
 
