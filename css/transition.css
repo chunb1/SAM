@@ -130,3 +130,45 @@ div#main:hover .bottomright{
     transform: rotate(90deg);
 }
 
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+.element {
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation: pulse 4s linear alternate infinite;
+}
+
+@keyframes pulse {
+    0% {
+        left: -120px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        left: 50%;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        left: 100%;
+        transform: rotate(360deg);
+    }
+}
+
+
+.message {
+    background-image: url(/images/moose.jpg);
+    height: 980px;
+    width: 1400px;
+}
