@@ -4,7 +4,7 @@
     padding: 0;
 }
     
-.box {
+.boxx {
     width: 100px;
     height: 100px;
     border: 2px solid;
@@ -130,13 +130,13 @@ div#main:hover .bottomright{
     transform: rotate(90deg);
 }
 
-html,
+/* html,
 body {
     height: 100%;
     position: relative;
-}
+} */
 
-.element {
+/* .element {
     position: absolute;
     color: white;
     display: flex;
@@ -164,11 +164,146 @@ body {
         left: 100%;
         transform: rotate(360deg);
     }
-}
+} */
 
 
 .message {
     background-image: url(/images/moose.jpg);
     height: 980px;
     width: 1400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: 140px;
+    width: 200px;
+}
+
+.white {
+    background-color: red;
+}
+
+.gray {
+    background-color: gray;
+}
+
+
+.message:hover {
+    
+    .a {
+
+    }
+    .b {
+        animation: fade 1s linear 5s;
+        animation-fill-mode: both;
+    }
+    .c { 
+        animation: fade 1s linear 1s;
+        animation-fill-mode: both;
+    }
+    .d {
+        animation: fade 1s linear 3s;
+        animation-fill-mode: both;
+    }
+    .e {
+        animation: fade 1s linear 2.2s;
+        animation-fill-mode: both;
+    }
+    .f {
+        animation: fade 1s linear 7s;
+        animation-fill-mode: both;
+    }
+    .g {
+        animation: fade 1s linear .2s;
+        animation-fill-mode: both;
+    }
+    .h {
+        animation: fade 1s linear 5.5s;
+        animation-fill-mode: both;
+    }
+    .i {
+        animation: fade 1s linear 9s;
+        animation-fill-mode: both;
+    }
+    .j {
+        animation: fade 1s linear 3.2s;
+        animation-fill-mode: both;
+    }
+    .k {
+        animation: fade 1s linear 1.9s;
+        animation-fill-mode: both;
+    }
+    .l {
+        animation: fade 1s linear 4.1s;
+        animation-fill-mode: both;
+    }
+    .m {
+        animation: fade 1s linear 3.2s;
+        animation-fill-mode: both;
+    }
+    .n {
+        animation: fade 1s linear 3.9s;
+        animation-fill-mode: both;
+    }
+    .o {
+        animation: fade 1s linear 8.2s;
+        animation-fill-mode: both;
+    }
+    .p {
+        animation: fade 1s linear 9.5s;
+        animation-fill-mode: both;
+    }
+    .q {
+
+    }
+    .r {
+
+    }
+    .s {
+
+    }
+    .t {
+
+    }
+    .u {
+
+    }
+    .v {
+
+    }
+    .w {
+
+    }
+    .x {
+
+    }
+    .y {
+
+    }
+    .z {
+
+    }
+    .aa {
+
+    }
+    .bb {
+
+    }
+}
+
+
+@keyframes fade {
+    /* 0% {
+        opacity: 100;
+    } */
+
+    100% {
+        opacity: 0;
+    }
 }
