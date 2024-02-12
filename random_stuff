@@ -204,3 +204,113 @@
             height: 2.5em;
             width: 8em;
         } */
+
+
+        <!-- <header class="header1">
+            <div class="header-left">
+                <i class="logo fa-solid fa-house"></i>
+                <h1>My Websites</h1>
+            </div>
+            
+            <ul class="links">
+                <li class="link"><a href="html/berk-hath.html">Berkshire Hathaway</a></li>
+                <li class="link"><a href="html/strawberries.html">Strawberry Page</a></li>
+                <li class="link"><a href="html/flex-box.html">Flex Box</a></li>
+        
+            </ul>
+        </header>
+        <div class="everything">
+        <h1 class="head">Strawberries!</h1>
+        <p class="text-top">Strawberries are an easy to grow fruit crop that 
+            will reward the home gardener with ample harvests for many years.
+            <br>With favorable conditions, each strawberry plant 
+            should produce one quart of strawberries.</p>
+            <div class="strawborder">   
+                <img class="strawberry-pic" src="../images/Strawberries.jpg" alt="strawberry-pic">   
+            </div>
+                <p class="sub-head">Where to Plant Strawberries</p>
+            <p>Basic considerations when locating a strawberry patch include</p>
+            <ul>
+                <li>Full sun</li>
+                <li>Well drained, sandy loam with a soil pH from 5.8 to 6.2 is ideal</li>
+                <li>Don't plant where tomatoes, potatoes, peppers or
+                    eggplant have been grown recently
+                </li>
+            </ul>
+            <p>Start with a rich, organic soil. Apply a balnced fertilizer (10-10-10)
+                at planting at the rate of one pound per 100 sq. ft. <br>Fertilize again after
+                renovation of June bearers or second harvest of day neutrals and everbeaning types.
+                Do not over <br>fertilizer or you will have excessive leaf growth and poor flowering.
+                Do not fertilizer strawberries late in the season in <br>colder climate to prevent
+             new growth that will be damaged by frost
+            </p>
+            <hr>
+            <p class="sub-head">Enjoy strawberries! They are good for you!</p>
+        </div>
+    
+        <footer class="footer1"> -->
+            
+            <!-- contact info -->
+            <!-- <div class="footer_left">
+                <p>My Websites Inc <br>284 Cumberland Ave <br>Portland, ME 04101 <br>243917@portlandschools.org</p>
+            </div> -->
+    
+            <!-- Copyright -->
+            <!-- <div class="footer_center">
+                My Websites © 2023
+            </div> -->
+    
+            <!-- Social Media Link -->
+            <!-- <div class="footer_right">
+                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/chunb1"><i class="fa-brands fa-github"></i></a>
+    
+            </div>
+        </footer> -->
+
+        <!-- .head {
+            font-style: italic;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .strawberry-pic {
+            border-style: dashed;
+            border-color: red;
+        }
+        
+        .strawborder {
+            text-align: center;
+        }
+        
+        .sub-head {
+            font-size: 19px;
+            font-weight: bold;
+            color: red;
+            font-style: italic;
+        }
+        
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 20px;
+        }
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px 20px;
+        }
+        
+        body {
+        
+            background-color: red;
+        }
+        .everything {
+            background-color: white;
+            margin: 0px 5% 0% 5% ;
+            border-style: solid;
+            border-color: black;
+        }
+        .footer_left {
+            font-family: 'Times New Roman', Times, serif;
+        } -->
