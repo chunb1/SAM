@@ -173,6 +173,7 @@ body {
     width: 1400px;
     display: flex;
     flex-direction: column;
+    border: 2px solid black;
 }
 
 .row {
@@ -186,7 +187,7 @@ body {
 }
 
 .white {
-    background-color: red;
+    background-color: white;
 }
 
 .gray {
@@ -195,9 +196,12 @@ body {
 
 
 .message:hover {
-    
-    .a {
 
+    .sdsa {}
+
+    .a {
+        animation: fade 1s linear .6s;
+        animation-fill-mode: both;
     }
     .b {
         animation: fade 1s linear 5s;
@@ -256,45 +260,164 @@ body {
         animation-fill-mode: both;
     }
     .p {
-        animation: fade 1s linear 9.5s;
+        animation: fade 1s linear 9.8s;
         animation-fill-mode: both;
     }
     .q {
-
+        animation: fade 1s linear 1.3s;
+        animation-fill-mode: both;
     }
     .r {
-
+        animation: fade 1s linear 7.9s;
+        animation-fill-mode: both;
     }
     .s {
-
+        animation: fade 1s linear 8.2s;
+        animation-fill-mode: both;
     }
     .t {
-
-    }
+        animation: fade 1s linear 0.5s;
+        animation-fill-mode: both;
+    } 
     .u {
-
+        animation: fade 1s linear 6.2s;
+        animation-fill-mode: both;
     }
     .v {
-
+        animation: fade 1s linear 3.1s;
+        animation-fill-mode: both;
     }
     .w {
-
+        animation: fade 1s linear 4.6s;
+        animation-fill-mode: both;
     }
     .x {
-
+        animation: fade 1s linear 2.7s;
+        animation-fill-mode: both;
     }
     .y {
-
+        animation: fade 1s linear 2.1s;
+        animation-fill-mode: both;
     }
     .z {
-
+        animation: fade 1s linear 5.9s;
+        animation-fill-mode: both;
     }
     .aa {
-
+        animation: fade 1s linear 4.9s;
+        animation-fill-mode: both;
     }
     .bb {
-
+        animation: fade 1s linear .2s;
+        animation-fill-mode: both;
     }
+
+    .cc {
+        animation: fade 1s linear 8.1s;
+        animation-fill-mode: both;
+    }
+
+    .dd {
+        animation: fade 1s linear 3.2s;
+        animation-fill-mode: both;
+    }
+
+    .ee {
+        animation: fade 1s linear 9.9s;
+        animation-fill-mode: both;
+    }
+    
+    .ff {
+        animation: fade 1s linear 5.1s;
+        animation-fill-mode: both;
+    }
+
+    .gg {
+        animation: fade 1s linear 6.7s;
+        animation-fill-mode: both;
+    }
+
+    .hh {
+        animation: fade 1s linear 6.3s;
+        animation-fill-mode: both;
+    }
+
+    .ii {
+        animation: fade 1s linear .9s;
+        animation-fill-mode: both;
+    }
+
+    .jj {
+        animation: fade 1s linear 5.3s;
+        animation-fill-mode: both;
+    }
+
+    .kk {
+        animation: fade 1s linear 1.5s;
+        animation-fill-mode: both;
+    }
+
+    .ll {
+        animation: fade 1s linear 3.2s;
+        animation-fill-mode: both;
+    }
+
+    .mm {
+        animation: fade 1s linear 4.3s;
+        animation-fill-mode: both;
+    }
+
+    .nn {
+        animation: fade 1s linear 7.8s;
+        animation-fill-mode: both;
+    }
+
+    .oo {
+        animation: fade 1s linear 1.1s;
+        animation-fill-mode: both;
+    }
+
+    .pp {
+        animation: fade 1s linear 3.9s;
+        animation-fill-mode: both;
+    }
+
+    .qq {
+        animation: fade 1s linear 7.1s;
+        animation-fill-mode: both;
+    }
+
+    .rr {
+        animation: fade 1s linear 5.8s;
+        animation-fill-mode: both;
+    }
+
+    .ss {
+        animation: fade 1s linear .42s;
+        animation-fill-mode: both;
+    }
+
+    .tt {
+        animation: fade 1s linear 7.6s;
+        animation-fill-mode: both;
+    }
+
+    .uu {
+        animation: fade 1s linear 7.8324s;
+        animation-fill-mode: both;
+    }
+
+    .vv {
+        animation: fade 1s linear 1.76s;
+        animation-fill-mode: both;
+    }
+
+    .ww {
+        animation: fade 1s linear 5.3s;
+        animation-fill-mode: both;
+    }
+
+
 }
 
 
