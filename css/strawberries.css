@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 2px black;
+    height: 5rem;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+header button {
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+header button:hover {
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.features {
+    margin-left: 20px;
+}
+
