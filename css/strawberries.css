@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -18,8 +19,9 @@ header {
     text-align: center;
 }
 
+
 header button {
-    margin-right: 20px;
+    margin-right: 2rem;
     background-color: transparent;
     border: none;
 }
@@ -31,7 +33,9 @@ header button:hover {
 .title {
     display: flex;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    margin: 1.75rem;
+    height: 2rem;
 }
 
 .header-right {
@@ -40,6 +44,79 @@ header button:hover {
 }
 
 .features {
-    margin-left: 20px;
+    margin-left: 1.5rem;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-left p {
+    margin-bottom: 3rem;
+}
+
+.main-left {
+    padding: 2rem;
+    width: 100rem;
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sync {
+    color: gray;
+    font-size: 1.5rem;
+    width: 15rem;
+}
+
+.main-right {
+    margin-top: 4rem;
+    margin-right: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-right img {
+    width: 30rem;
+}
+
+.remote {
+    font-size: 10vh;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6vh;
+    color: rgb(20, 20, 20);
+}
+
+
+.learn {
+    height: 3rem;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border: transparent;
+    font-weight: bold;
+    /* margin-bottom: 300px; */
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 2px black; */
+    margin-top: 200px;
+    height: 25px;
+    width: 550px;
+}
+
+.sponsors img {
+    margin-right: 20px;
+}
