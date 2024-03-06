@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+li {
+    font-size: 12px;
+    list-style: none;
+
+}
 
 header {
     display: flex;
@@ -26,9 +31,17 @@ header button {
     border: none;
 }
 
-header button:hover {
-    /* font-weight: bold; */
+.feature-options {
+    display: none;
 }
+
+/* .features:hover {
+    display: block;
+} */
+
+/* header button:hover {
+    font-weight: bold;
+} */
 
 .title {
     display: flex;
@@ -62,7 +75,7 @@ main {
 .main-left {
     /* padding: 2rem; */
     /* width: 100rem; */
-    margin-left: 6rem;
+    margin-left: 4rem;
     display: flex;
     flex-direction: column;
 
@@ -71,7 +84,7 @@ main {
 .sync {
     color: gray;
     font-size: 1.5rem;
-    width: 100%;
+    width: 90%;
 }
 
 .main-right {
@@ -83,9 +96,9 @@ main {
     
 }
 
-.main-right img {
+.desktopimage {
     width: 60%;
-    min-width: 30rem;
+    min-width: 25rem;
     height: 60%;
 
 }
@@ -125,11 +138,30 @@ main {
     margin-right: 20px;
 }
 
+.mobileimage {
+    display: none;
+}
+
+.hamburger-button {
+    display: none;
+    font-size: 24px;
+}
+
+
 @media (max-width: 375px) {
 
     header .button1{
         display: none;
     }
+
+    header ul {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+
     main {
         margin: 0px;
         display: flex;
@@ -154,7 +186,7 @@ main {
         font-size: 6vh;
         font-weight: bold;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
         margin-bottom: 6vh;
         color: rgb(20, 20, 20);
@@ -169,12 +201,14 @@ main {
 
     .desktopimage {
         display: none;
-        width: 10%;
+        /* width: 10%;
         min-width: 375px;
-        height: 400px;
+        height: 400px; */
     }
 
     .mobileimage {
+        margin-top: 10%;
+        display: block;
        width: 10%;
        min-width: 375px;
        height: 400px; 
@@ -198,7 +232,7 @@ main {
         /* border: solid 2px black; */
         margin-top: 50px;
         height: 25px;
-        width: 375px;
+        width: 360px;
     }
 
     .sponsors img {
