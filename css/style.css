@@ -12,7 +12,7 @@
     color: white;
     background-color: darkslategray;
     height: 100px;
-    width: 100%;
+    width: 95%;
     align-items: center;
     padding: 20px 20px;
 }
@@ -103,7 +103,35 @@
     }
 }
 
+.weather-con {
+    width: 340px;
+    height: 80px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(52, 52, 219);
+    border-radius: 20px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+}
 
+.weather-left {
+    width: 100px;
+}
+
+.weather-mid {
+    width: 100px;
+}
+
+.weather-right {
+    width: 100px;
+}
 
 
 .four-card {
