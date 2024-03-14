@@ -1,29 +1,34 @@
-const plusBtnList = document.querySelectorAll('.plus')
-const minusBtnList = document.querySelectorAll('.minus')
-const answerList = document.querySelectorAll('.answer')
+// const plusBtnList = document.querySelectorAll('.plus')
+// const minusBtnList = document.querySelectorAll('.minus')
+// const answerList = document.querySelectorAll('.answer')
 const hamburgerBtn = document.querySelector(".hamburger-button")
 const optionMenu = document.querySelector(".hamburger-menu")
 const theJoke = document.querySelector(".output")
 const jokeBtn = document.querySelector(".button")
+const weatherLocation = document.querySelector('.location')
+const dateTime = document.querySelector('.date-time')
+const weatherImage = document.querySelector('.weather-icon')
+const weatherTemp = document.querySelector('.temp')
+const weatherSky = document.querySelector('.sky')
 
 
-plusBtnList.forEach(element => {
-    element.addEventListener('click', () =>{
-        let index = parseInt(element.id)
-        minusBtnList[index].style.display = 'block'
-        answerList[index].style.display = 'block'
-        plusBtnList[index].style.display = 'none'
-    })
-});
+// plusBtnList.forEach(element => {
+//     element.addEventListener('click', () =>{
+//         let index = parseInt(element.id)
+//         minusBtnList[index].style.display = 'block'
+//         answerList[index].style.display = 'block'
+//         plusBtnList[index].style.display = 'none'
+//     })
+// });
 
-minusBtnList.forEach(element => {
-    element.addEventListener('click', () =>{
-        let index = parseInt(element.id)
-        minusBtnList[index].style.display = 'none'
-        answerList[index].style.display = 'none'
-        plusBtnList[index].style.display = 'block'
-    })
-});
+// minusBtnList.forEach(element => {
+//     element.addEventListener('click', () =>{
+//         let index = parseInt(element.id)
+//         minusBtnList[index].style.display = 'none'
+//         answerList[index].style.display = 'none'
+//         plusBtnList[index].style.display = 'block'
+//     })
+// });
 
 hamburgerBtn.addEventListener('click', () => {
     if (optionMenu.style.display == 'none'){
@@ -34,14 +39,14 @@ hamburgerBtn.addEventListener('click', () => {
     }
 })
 
-const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'bb01df25f9msha3599434f7cb591p179ab0jsn68ae0b10d3e4',
-		'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
-	}
-};
+// const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'bb01df25f9msha3599434f7cb591p179ab0jsn68ae0b10d3e4',
+// 		'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
+// 	}
+// };
 
 
 
@@ -58,6 +63,40 @@ async function getJoke() {
 }
 
 
-jokeBtn.addEventListener('click', () => {
-    getJoke()
-})
+// jokeBtn.addEventListener('click', () => {
+//     getJoke()
+// })
+
+"39dce473c4c96e09983547057571ee73"
+
+weatherLocation.textContent = 'Portland, ME'
+weatherSky.textContent = 'cloudy'
+weatherTemp.textContent = '40° F'
+const dateObject = new Date()
+const month = dateObject.getMonth()+1
+const date = dateObject.getDate()
+const year = dateObject.getFullYear()
+let hour = dateObject.getHours()
+let minute = dateObject.getMinutes()
+let dayPart = 'pm'
+
+
+if (minute<10) {
+    minute = '0'+minute.toString()
+}
+
+if (hour<12) {
+    dayPart = 'am'
+}
+
+if (hour>12) {
+    hour = hour-12
+}
+
+let time = `${hour}:${minute}${dayPart}`
+
+console.log(month, date, year, time)
+weatherLocation.textContent = 'Portland, ME'
+weatherSky.textContent = 'cloudy'
+weatherTemp.textContent = '40° F'
+dateTime.textContent = time
