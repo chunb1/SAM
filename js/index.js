@@ -9,7 +9,9 @@ const weatherLocation = document.querySelector('.location')
 const dateTime = document.querySelector('.date-time')
 const weatherImage = document.querySelector('.weather-icon')
 const weatherTemp = document.querySelector('.temp')
-const weatherSky = document.querySelector('.sky')
+const currentCondition = document.querySelector('.sky')
+const copyYear = document.querySelector('.copyYear')
+
 
 
 // plusBtnList.forEach(element => {
@@ -67,10 +69,10 @@ async function getJoke() {
 //     getJoke()
 // })
 
-"39dce473c4c96e09983547057571ee73"
+const key = "39dce473c4c96e09983547057571ee73"
 
 weatherLocation.textContent = 'Portland, ME'
-weatherSky.textContent = 'cloudy'
+currentCondition.textContent = 'cloudy'
 weatherTemp.textContent = '40° F'
 const dateObject = new Date()
 const month = dateObject.getMonth()+1
@@ -79,7 +81,42 @@ const year = dateObject.getFullYear()
 let hour = dateObject.getHours()
 let minute = dateObject.getMinutes()
 let dayPart = 'pm'
+const clouds = ['few clouds','scattered clouds','broken clouds']
+const rain = ['shower rain','rain', 'mist']
+let lat = 43.6591
+let lon = -70.2568
+let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
+let img
 
+
+async function getWeather() {
+    try {
+        const response = await fetch(url)
+        const data = await response.json()
+        weatherTemp.textContent = Math.round(data.main.temp)
+        let condition = data.weather[0].description
+        console.log(condition)
+        currentCondition.textContent = condition
+
+        if (condition == 'Clouds') {
+            img = 'partly-cloudy.png'
+        } else if (rain.includes(condition)) {
+            img = 'rain.png'
+        } else if (condition=='thunderstorm') {
+            img = 'rain-storm.png'
+        } else if (condition == 'snow') {
+            img = 'snow.png'
+        } else {
+            img = 'sunny.png'
+        }
+
+        weatherImage.src = `../images/weather_imgs/${img}`
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+getWeather()
 
 if (minute<10) {
     minute = '0'+minute.toString()
@@ -97,6 +134,14 @@ let time = `${hour}:${minute}${dayPart}`
 
 console.log(month, date, year, time)
 weatherLocation.textContent = 'Portland, ME'
-weatherSky.textContent = 'cloudy'
+currentCondition.textContent = 'cloudy'
 weatherTemp.textContent = '40° F'
 dateTime.textContent = time
+
+
+
+
+
+
+
+// copyYear.textContent = year
