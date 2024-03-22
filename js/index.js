@@ -79,7 +79,6 @@ let ipUrl = `https://api.geoapify.com/v1/ipinfo?&apiKey=${ipKey}`
 
 
 async function getIp() {
-
     try {
         const ipResponse = await fetch(ipUrl)
         const ipData = await ipResponse.json()
@@ -88,6 +87,9 @@ async function getIp() {
         lon = ipData.location.longitude.toString()
         city = ipData.city.name
         state = ipData.state.name
+        weatherLocation.textContent = `${city}, ${state}`
+
+
         console.log(lat,lon,city,state)
     } catch (error) {
         console.error(error)
@@ -96,6 +98,7 @@ async function getIp() {
 }
 
 getIp()
+console.log(lat,lon,city,state)
 
 const key = "39dce473c4c96e09983547057571ee73"
 
@@ -115,7 +118,7 @@ const rain = ['shower rain','rain', 'mist']
 let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
 let img
 
-
+console.log(url)
 
 async function getWeather() {
     try {
