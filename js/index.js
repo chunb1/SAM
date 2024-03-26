@@ -11,10 +11,10 @@ const weatherImage = document.querySelector('.weather-icon')
 const weatherTemp = document.querySelector('.temp')
 const currentCondition = document.querySelector('.sky')
 const copyYear = document.querySelector('.copyYear')
-let lat
-let lon
-let city
-let state
+// let lat
+// let lon
+// let city
+// let state
 
 
 
@@ -75,57 +75,60 @@ async function getJoke() {
 
 const ipKey = '811cc88b7311461cad03dad894f8ce98'
 
-let ipUrl = `https://api.geoapify.com/v1/ipinfo?&apiKey=${ipKey}`
+
 
 
 async function getIp() {
+    const ipUrl = `https://api.geoapify.com/v1/ipinfo?&apiKey=${ipKey}`
     try {
         const ipResponse = await fetch(ipUrl)
         const ipData = await ipResponse.json()
-        console.log(ipData)
-        lat = ipData.location.latitude.toString()
-        lon = ipData.location.longitude.toString()
-        city = ipData.city.name
-        state = ipData.state.name
-        weatherLocation.textContent = `${city}, ${state}`
+        const lat = ipData.location.latitude
+        const lon = ipData.location.longitude
+        const coords = [lat, lon]
+        console.log(lat,lon)
+
+        return coords
 
 
-        console.log(lat,lon,city,state)
     } catch (error) {
         console.error(error)
     }
     
 }
 
-getIp()
-console.log(lat,lon,city,state)
-
+getIp().then(c => getTime(c))
+getIp().then(c => getWeather(c))
 const key = "39dce473c4c96e09983547057571ee73"
 
 weatherLocation.textContent = 'Portland, ME'
 currentCondition.textContent = 'cloudy'
 weatherTemp.textContent = '40° F'
-const dateObject = new Date()
-const month = dateObject.getMonth()+1
-const date = dateObject.getDate()
-const year = dateObject.getFullYear()
-let hour = dateObject.getHours()
-let minute = dateObject.getMinutes()
-let dayPart = 'pm'
+// const dateObject = new Date()
+// const month = dateObject.getMonth()+1
+// const date = dateObject.getDate()
+// const year = dateObject.getFullYear()
+// let hour = dateObject.getHours()
+// let minute = dateObject.getMinutes()
+// let dayPart = 'pm'
 const clouds = ['few clouds','scattered clouds','broken clouds','overcast clouds']
-const rain = ['shower rain','rain', 'mist']
+const rain = ['shower rain','rain', 'mist', 'light rain']
 
-let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
+
 let img
 
-console.log(url)
 
-async function getWeather() {
+
+async function getWeather(coords) {
+
+    const lat = coords[0]
+    const lon = coords[1]
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
     try {
         const response = await fetch(url)
         const data = await response.json()
-        //console.log(data)
         weatherTemp.textContent = `${Math.round(data.main.temp)}°`
+        
         let condition = data.weather[0].description
         console.log(condition)
         currentCondition.textContent = condition
@@ -142,34 +145,65 @@ async function getWeather() {
             img = 'sunny.png'
         }
 
-        console.log(data)
         weatherImage.src = `../images/weather_imgs/${img}`
     } catch (error) {
         console.error(error)
     }
 }
 
-getWeather()
 
-if (minute<10) {
-    minute = '0'+minute.toString()
+
+async function getTime(coords) {
+    const lat = coords[0]
+    const lon = coords[1]
+    const timeUrl = `https://api.api-ninjas.com/v1/worldtime?lat=${lat}&lon=${lon}`
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-Api-Key': 'iSYtIzIzOP+djB+BgnewpQ==mkCx35h8AIRGD9Qw'
+        }
+    }
+
+    try {
+        const timeResponse = await fetch(timeUrl, options)
+        const timeData = await timeResponse.json()
+        const hr = timeData.hour
+        const min = timeData.minute
+        const month = timeData.month
+        const day = timeData.day
+        const yr = timeData.year
+        let dayPart = 'pm'
+
+        if (min<10) {
+            min = '0'+minute.toString()
+        }
+
+        if (hr<12) {
+            dayPart = 'am'
+        }
+
+        if (hr>12) {
+            hour = hour-12
+        }
+
+
+        dateTime.textContent = `${hr}:${min}${dayPart} ${month}/${day}/${yr}`
+    }   catch (error) {
+        console.error(error)
+    }
 }
 
-if (hour<12) {
-    dayPart = 'am'
-}
 
-if (hour>12) {
-    hour = hour-12
-}
 
-let time = `${hour}:${minute}${dayPart}`
 
-console.log(month, date, year, time)
-weatherLocation.textContent = 'Portland, ME'
-currentCondition.textContent = 'cloudy'
-weatherTemp.textContent = '40° F'
-dateTime.textContent = time
+
+// let time = `${hour}:${minute}${dayPart}`
+
+//console.log(month, date, year, time)
+//weatherLocation.textContent = 'Portland, ME'
+//currentCondition.textContent = 'cloudy'
+//weatherTemp.textContent = '40° F'
+//dateTime.textContent = time
 
 
 
